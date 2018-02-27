@@ -201,7 +201,10 @@ Segmentation fault (core dumped)
 
 As we expected, we got a SIGSEGV with the program trying to execute at address `0xffffffff` which are the 4 bytes we placed where we assumed eip was stored on the stack. From here, we can now begin developing our exploit.
 
-NOTE: A good thing to take note of is the method of which we are obtaining our overflow, `gets`. `gets` will, according to the man page, read "a line from stdin into the buffer pointed to...until either a terminating newline or EOF, which it replaces with a null bytes ('\0')." Here we establish our character restriction as no newlines, 0x0a bytes, can be used prematurely or it will end our overflow and be replaced with a NUL byte. The upside is that with `gets`, we are not restricted from using a NUL byte ourselves.
+NOTE: A good thing to take note of is the method of which we are obtaining our overflow, `gets`. `gets` will, according to the man page, read
+> a line from stdin into the buffer pointed to...until either a terminating newline or EOF, which it replaces with a null bytes ('\0').
+
+Here we establish our character restriction as no newlines, 0x0a bytes, can be used prematurely or it will end our overflow and be replaced with a NUL byte. The upside is that with `gets`, we are not restricted from using a NUL byte ourselves.
 
 ## Exploit
 
