@@ -59,7 +59,7 @@ You get a cup of coffee and settle in to study. After a while some of the materi
 Option 2 for changing the major looks like it's going to take some input, so a potentially valid path for exploitation. We still have not yet checked to see if any of the initial input fields can be overflowed.
 
 ```console
-user@host:~/ctf/2018/tamuctf/pwn/pwn5$ python -c "print(('A'*1000 + '\n') * 3 + 'n\n')" | ./pwn5
+$ python -c "print(('A'*1000 + '\n') * 3 + 'n\n')" | ./pwn5
 [cut]
  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, to Texas A&M!
 [cut]
