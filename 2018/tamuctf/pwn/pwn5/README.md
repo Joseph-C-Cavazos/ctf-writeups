@@ -7,7 +7,7 @@ Note: The output is not buffered properly but exploits should still work
 *For the ending Python code used to solve this challenge, click [here](#solution).*
 
 ## Discovery
-This challenge provides us the binary [pwn5](pwn5/pwn5).
+This challenge provides us the binary [pwn5](pwn5).
 
 When running the binary, we can see it is an interactive program that prompts some user input.
 
