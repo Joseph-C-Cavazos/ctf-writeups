@@ -4,7 +4,7 @@ nc pwn.ctf.tamu.edu 4325
 Note: The output is not buffered properly but exploits should still work
 ```
 
-*For the ending Python code used to solve this challenge, click [here](#Solution).*
+*For the ending Python code used to solve this challenge, click [here](#solution).*
 
 ## Discovery
 This challenge provides us the binary [pwn5]().
